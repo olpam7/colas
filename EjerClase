@@ -1,0 +1,29 @@
+ using System;
+ using System.Collections;
+ public class SamplesQueue  {
+
+    public static void Main()  {
+
+       
+       Queue myQ = new Queue(5);
+       myQ.Enqueue(Console.ReadLine());
+       myQ.Enqueue(Console.ReadLine());
+       myQ.Enqueue(Console.ReadLine());
+	   myQ.Enqueue(Console.ReadLine());
+	   myQ.Enqueue(Console.ReadLine());
+      for (int i = 0; i < 3; i++)
+            {              
+                Console.WriteLine("Elementos totales que se encuentran en la cola: " + myQ.Count);
+                Console.WriteLine("");
+                Console.WriteLine("Elemento retirado de la cola: " +myQ.Dequeue());
+                Console.WriteLine("el proximo elemento que queda en la cola es: " +myQ.Peek());
+                Console.WriteLine("");
+                Console.WriteLine("");
+		  		
+            }
+          
+            Console.WriteLine("Elementos totales que se encuentran en la cola: " + myQ.Count);                      
+           
+        }
+    }
+    
